@@ -11,13 +11,13 @@
     "lib",
     "src",
     "binding.gyp",
-    ".github/scripts/libmongocrypt.mjs"
+    "etc/libmongocrypt.mjs"
   ],
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "install:libmongocrypt": "node .github/scripts/libmongocrypt.mjs",
+    "install:libmongocrypt": "node etc/libmongocrypt.mjs",
     "install": "prebuild-install --runtime napi || npm run install:libmongocrypt",
     "clang-format": "clang-format --style=file:.clang-format --Werror -i addon/*",
     "check:eslint": "ESLINT_USE_FLAT_CONFIG=false eslint src test",
