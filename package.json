@@ -10,7 +10,8 @@
     "addon",
     "lib",
     "src",
-    "binding.gyp"
+    "binding.gyp",
+    ".github/scripts/libmongocrypt.mjs"
   ],
   "directories": {
     "lib": "lib"
